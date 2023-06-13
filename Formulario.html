@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <p>20% de descuento en todos los productos!</p>
+
+        <div class="cont">
+            <img src="img/Logo.png" alt="" />
+            <h1>Nombre Tienda</h1>
+        </div>
+    </header>
+    <div class="cont1">
+        <p class="ele">Contacto</p>
+        <p class="ele">Registrarme</p>
+        <p class="ele">Ingresar</p>
+    </div>
+    <main>
+        <div class="formulario">
+        <h1>Añadí tu super!</h1>
+        <p>Agregá tu personaje favorito completando las opciones.</p>
+        <form action="" class="form">
+            <div class="form-groupi"><label for="nombre">*Nombre</label>
+            <input type="text" name="nombre" id="nombre" /></div>
+            <div class="form-groupd"><label for="especie">*Especie</label>
+            <select name="Especie" id="Especie">
+                <option value="Humano">Humano</option>
+                <option value="Unknown">Unknown</option>
+                <option value="Alien">Alien</option>
+            </select></div>
+            
+            <div class="form-groupi"><label for="fecha">Fecha de nacimiento</label>
+                <input type="date" name="fecha" id="fecha" value="2023-06-12" /></div>
+            <div class="form-groupd"><label for="foto">Agregar Foto</label>
+                <input type="file" name="foto" id="foto" accept=".jpeg, .pdf" multiple /></div>
+            <div class="form-groupi"><label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Descripción"></textarea></div>
+            <div class="cont-class">
+                <div class="form-groupd"><legend>Poderes</legend>
+            <label for="Volar">
+                <input type="checkbox" name="Poderes" id="Volar" value="Volar" />Volar
+            </label>
+            <label for="Superinteligencia">
+                <input type="checkbox" name="Poderes" id="Superinteligencia"
+                    value="Superinteligencia" />Superinteligencia
+            </label>
+            <label for="Vista de rayo láser">
+                <input type="checkbox" name="Poderes" id="Vista de rayo láser" value="Vista de rayo láser" />Vista de
+                rayo láser
+            </label>
+            <label for="Billetera gorda">
+                <input type="checkbox" name="Poderes" id="Billetera gorda" value="Billetera gorda" />Billetera gorda
+            </label></div>
+            <div class="form-groupi"> <p>Tipo de personaje</p>
+            <label for="Héroe / Heroina" class="vert">
+                <input type="radio" name="tipo" id="Héroe / Heroina" value="Héroe / Heroina" />
+                Héroe / Heroina
+            </label>
+            <label for="Villano / Villana" class="vert">
+                <input type="radio" name="tipo" id="Villano / Villana" value="Villano / Villana" />
+                Villano / Villana
+            </label>
+            </div>
+        </div>
+        <div><input type="submit" value="Añadir" /></div> 
+        </div>
+        <footer>
+            <p>Todos los derechos reservados a FE1</p>
+            <img src="img/gitHub.svg" alt="Logo de gitHub" />
+        </footer>
+
+
+
+        </form>
+    </main>
+</body>
+
+</html>
