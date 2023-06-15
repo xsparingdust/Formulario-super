@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -11,25 +11,35 @@ body {
 }
 
 /********** ESTILOS PARA EL HEADER **********/
-.cont{display: flex;
-background-color: #00669f;
+.cont {
+  display: flex;
+  background-color: #00669f;
   color: white;
   padding: 10px;
   position: sticky;
   top: 0;
-  z-index: 10;align-items: center;}
+  z-index: 10;
+  align-items: center;
+}
 
-  .cont1{background-color: #001D2D;font-weight: 400;
-  font-size: 16px;color: #FFFFFF; display: flex;
-justify-content: flex-end;height: 40px;align-items: center;}
-.ele{padding: 0 20px;}
+.cont1 {
+  background-color: #001d2d;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+  align-items: center;
+}
+.ele {
+  padding: 0 20px;
+}
 
 header p {
   background-color: aquamarine;
   padding: 2px 0px 2px 10px;
 }
-
-
 
 /********** ESTILOS PARA EL MAIN **********/
 
@@ -77,9 +87,9 @@ section article .bgMujermaravilla {
   background-image: url("../img/Fondo\ mujermaravilla.png");
 }
 
-.otrafoto{
-  background-image:url("../img/superman.png");
-  background-size:cover;
+.otrafoto {
+  background-image: url("../img/superman.png");
+  background-size: cover;
   width: 125px;
   height: 125px;
   border-radius: 50%;
@@ -114,6 +124,22 @@ section article button {
   margin: 25px;
   padding: 10px 30px;
 }
+.boton {
+  background-color: #00669f;
+  font-size: 45px;
+  width: 75px;
+  height: 75px;
+  color: #f3f3f3;
+  border-radius: 50%;
+  position: absolute;
+  top: 450px;
+  right: 22px;
+}
+
+.boton:hover {
+  background-color: #001d2d;
+  
+}
 
 /********** ESTILOS PARA EL FOOTER **********/
 
@@ -132,68 +158,114 @@ footer img {
   right: 25px;
   width: 100px;
 }
-.boton{
-  background-color: #00669f;
-  font-size: 45px;
-  width: 75px;
-  height: 75px;
-  color: #f3f3f3;
-  border-radius: 50%;
-  position: absolute;
-  top: 450px;
-  right: 22px;
-}
+
 /********** Para Tablet **********/
-@media screen and (max-width:768px){
-  .boton{
+@media screen and (max-width: 768px) {
+  .boton {
     top: 80%;
   }
-  
 }
-  
-@media screen and (max-width:480px){
-  .boton{
+
+@media screen and (max-width: 480px) {
+  .boton {
     top: 77%;
     right: 0%;
   }
-  .ocultar{
+  .ocultar {
     display: none;
   }
-  .otrafoto{
-    background-image:url("../img/Otra\ foto\ de\ superman.png");}
+  .otrafoto {
+    background-image: url("../img/Otra\ foto\ de\ superman.png");
+  }
 }
 
 /**********************Formulario*******************/
-.formulario{
+.formulario {
   display: flex;
   width: 954px;
   height: 832px;
   flex-direction: column;
   margin-left: calc(50% - 477px);
-  background-color:#00669f;
-  border-radius:49px;
+  background-color: #00669f;
+  border-radius: 49px;
   margin-top: 40px;
   margin-bottom: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+}
+::placeholder {
+  font-weight: 300;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-groupd {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin-top: 20px;
+}
+.form-groupi {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding-right: 23px;
+  margin-top: 20px;
 }
 
-.form{display: flex;flex-wrap: wrap;}
-.form-groupd{display: flex;flex-direction: column;flex-basis: 50%;margin-top: 20px;}
-.form-groupi{display: flex;flex-direction: column;flex-basis: 50%;flex-wrap: wrap;
-  align-content: flex-end;
-  padding-right: 23px;margin-top: 20px;}
-label{font-weight: 300;font-size: 20px;}
-input[type="text"],[type="date"]{width: 343px; height: 63px;border: 1.53407px solid rgba(0, 0, 0, 0.1);
-  border-radius: 15.3407px;}
-textarea{width: 343px; height: 307px;}
-select{width: 343px; height: 63px;border: 1.53407px solid rgba(0, 0, 0, 0.1);
-  border-radius: 15.3407px;}
-  .cont-class{display: flex;flex-direction: column;flex-basis: 50%;align-items: flex-start;}
-  input[type=submit]{
-    width: 466px;
-    height: 87px; 
-    background: #1CD1B0;
-    border-radius: 23.011px;margin-left: 244px;
-  margin-top: 45px;font-weight: 700;font-size: 40px;}
+label {
+  font-weight: 300;
+  font-size: 20px;
+}
+input[type="text"],
+[type="date"] {
+  width: 343px;
+  height: 63px;
+  border: 1.53407px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15.3407px;
+}
+textarea {
+  width: 343px;
+  height: 307px;
+  border-radius: 23px;
+}
+select {
+  width: 343px;
+  height: 63px;
+  border: 1.53407px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15.3407px;
+}
+.cont-class {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  align-items: flex-start;
+}
+input[type="submit"] {
+  width: 466px;
+  height: 87px;
+  background: #1cd1b0;
+  border-radius: 23.011px;
+  margin-left: 244px;
+  margin-top: 45px;
+  font-weight: 700;
+  font-size: 40px;
+
+}
+input[type="submit"]:hover {
+  width: 466px;
+  height: 87px;
+  background: #001d2d;
+  border-radius: 23.011px;
+  margin-left: 244px;
+  margin-top: 45px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+}
